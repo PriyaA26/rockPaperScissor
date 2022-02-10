@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Rock Paper Scissors</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="rps.css">
+    </head>
+    <body>
+        <div id="me">
+            <div class="left">
+                <div id="comp">
+                    <div> Computer </div>
+                    <img src ="pprs.png" id="comp-img" class="left-img">
+                </div> <!-- Hand displaying comp turn -->
+                <div id="center"></div>
+                <div id="player">
+                    <div> Player </div>
+                    <img src = "pprs.png" id="player-img" class="left-img">
+                </div>  <!-- Hand showing player turn -->
+            </div>
+            
+            <div class="right">
+                <div class="full-score">
+                    <div id="player-id">
+                        <!-- <div id="score">Score</div> -->
+                        <div class="score-block">
+                            <div><h4><b><u>PLAYER</u></b></h4></div>
+                            <div id="player-score">0</div>
+                            <!-- <div>XXXXX</div> -->
+                        </div>
+                    </div>
+                    <div id="Computer-id">
+                        <!-- <div id="score">CPU</div> -->
+                        <div class="score-block container ">
+                            <div><h4><u><b>COMPUTER</u></b></h4></div>
+                            <div id="cpu-score">0</div>
+                       </div>
+                    </div>
+                </div>
+                <div><h2 id="result-txt">PLAY NOW</h2></div>
+                <div id="player-choice">
+                    <img id="rock-img" data-is-selected="false" class="img-zoom" alt="Rock" src="rocks.png">
+                    <img id="paper-img" data-is-selected="false" class="img-zoom" alt="Paper" src="pprs.png" >
+                    <img id="scissors-img" data-is-selected="false" class="img-zoom" alt="Scissors" src="scissors.png">
+                </div>
+                <div><button class="button button1" disabled id="lock">LOCK</button></div>
+            </div>
+        </div>
+        <script src="appa.js" async defer></script>
+    </body>
+</html>
