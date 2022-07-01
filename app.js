@@ -33,64 +33,6 @@ for(let i=0;i<rand.length;i++){
         }
     }) 
 }
-// const game = () => {
-//     lock.addEventListener(click(),(e)=>{
-//         let randomNum = Math.floor(Math.random() * 3);
-//         computerTurn = rand[randomNum];
-//         if(computerTurn===playerchoice){
-//             resultTxt.innerHTML = "This is a Tie";
-//             pScore.innerHTML = pScore.innerHTML;
-//             cScore.innerHTML = cScore.innerHTML;
-//             resultTxt.style.color = 'orange';
-//         }
-//         else if(computerTurn=="rock-img" && playerChoice=="paper-img" ){
-//             resultTxt.innerHTML = "You Lose";  
-//             resultTxt.style.color = 'red'
-//             pScore.innerHTML = pScore.innerHTML;
-//             // cScore++;
-//             cScore.innerHTML = cScore.innerHTML+1;
-//         }
-//         else if(computerTurn=="rock-img" && playerChoice=="scissors-img" ){
-//             resultTxt.innerHTML = "You Win";
-//             resultTxt.style.color = 'green'
-//             pScore.innerHTML = pScore.innerHTML+1;
-//             // pScore++;
-//             cScore.innerHTML = cScore.innerHTML;
-//         }
-//         else if(computerTurn=="paper-img" && playerChoice=="rock-img" ){
-//             resultTxt.innerHTML = "You Win";
-//             resultTxt.style.color = 'green'
-//             pScore.innerHTML = pScore.innerHTML+1;
-//             // pScore++;
-//             cScore.innerHTML = cScore.innerHTML;
-//         }
-//         else if(computerTurn=="paper-img" && playerChoice=="scissors-img" ){
-//             resultTxt.innerHTML = "You lose";
-//             resultTxt.style.color = 'red'
-//             pScore.innerHTML = pScore.innerHTML;
-//             // cScore++;
-//             cScore.innerHTML = cScore.innerHTML+1;
-//         }
-//         else if(computerTurn=="scissors-img" && playerChoice=="paper-img" ){
-//             resultTxt.innerHTML = "You Win";
-//             resultTxt.style.color = 'green'
-//             pScore.innerHTML = pScore.innerHTML+1;
-//             // cScore++;
-//             cScore.innerHTML = cScore.innerHTML;
-//         }
-//         else if(computerTurn=="scissors-img" && playerChoice=="rock-img" ){
-//             resultTxt.innerHTML = "You lose";
-//             resultTxt.style.color = 'red'
-//             pScore.innerHTML = pScore.innerHTML;
-//             // cScore++;
-//             cScore.innerHTML = cpScore+1; 
-//         }
-//     })
-// };
-
-// game();
-
-
 
 const getSelection = () => {
     for(let i=0;i<rand.length;i++){
@@ -107,7 +49,7 @@ const game = () => {
         if(lock.disabled===false){
         let compChoice = Math.floor(Math.random() * 3);
         const playerChoice = getSelection();
-        if(cScore == 10 || pScore == 10){
+        if(cpScore == 10 || playerScore == 10){
             resultTxt.innerHTML = 'GAME OVER';
         }
         if(compChoice === playerChoice){
