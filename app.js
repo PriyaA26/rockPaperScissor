@@ -50,9 +50,11 @@ const game = () => {
         let compChoice = Math.floor(Math.random() * 3);
         const playerChoice = getSelection();
         if(cpScore == 10 || playerScore == 10){
-            resultTxt.innerHTML = 'GAME OVER';
+            resultTxt.innerHTML = "GAME OVER";
+            resultTxt.style.color = '#000000'
+            lock.disabled = true
         }
-        if(compChoice === playerChoice){
+        else if(compChoice === playerChoice){
             resultTxt.innerHTML = "This is a Tie  &#x1F610;";
             resultTxt.style.color = 'orange';
             playerImg.setAttribute("src", rand2[playerChoice])
